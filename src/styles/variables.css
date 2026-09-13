@@ -1,0 +1,28 @@
+:root {
+  --ink: #090907;
+  --charcoal: #171713;
+
+  --paper: #d8d0bd;
+  --paper-bright: #eee5d2;
+  --paper-muted: #9f9684;
+
+  --mud: #3c3a2d;
+  --olive: #4a4f32;
+  --moss: #656b44;
+
+  --rust: #8f2f1d;
+  --blood: #b53a24;
+  --faded-red: #7b2418;
+
+  --bone: #c9bea8;
+  --dirty-yellow: #b7a45f;
+
+  --font-display: 'Fraunces', serif;
+  --font-sans: 'Archivo', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-typewriter: 'Special Elite', monospace;
+
+  --radius-lg: 1.1rem;
+  --radius-md: 0.65rem;
+  --section-padding: clamp(4rem, 8vw, 8rem);
+}
