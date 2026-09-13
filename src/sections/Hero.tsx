@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import '../styles/Hero.css';
+import { publicAsset } from '../utils/publicAsset';
 
 export default function Hero() {
   return (
     <>
       <section className="hero" id="top">
         <img
-          src="/images/hero-combined2.png"
+          src={publicAsset('/images/hero-combined2.png')}
           alt="Outdoor collage portrait of Joaquin Elizalde"
           className="hero__image"
         />

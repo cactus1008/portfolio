@@ -71,3 +71,10 @@ Production hosting must rewrite non-file paths to `index.html` for React Router 
 ## Game AI code excerpt
 
 `combat_enemy.gd` at the project root contains the 271-line portfolio excerpt. The game project's `codeSnippet` entry in `src/data/projects.ts` imports it as text, so editing that file updates the expandable code section on `/work/game`. It contains selected decision and movement functions, not a standalone Godot script; the header lists omitted context. The original function bodies are preserved.
+
+
+## GitHub Pages deployment
+
+The site is deployed at `https://cactus1008.github.io/portfolio/`, so `vite.config.ts` uses `base: '/portfolio/'` and `BrowserRouter` uses that same base. Image fields still use `/images/filename.png`; `src/utils/publicAsset.ts` adds the deployment base when rendered. The resume uses the same helper.
+
+`npm run build` also runs `scripts/build-page-entries.mjs`, creating an `index.html` for each page so direct links and refreshes work on GitHub Pages. Add new routes to that script as well as `src/App.tsx`. Push the changes to `main` to trigger the existing deployment workflow. Preview locally at `/portfolio/`.

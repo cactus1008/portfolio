@@ -26,7 +26,7 @@ function RouteEffects() {
   return null;
 }
 export default function App() {
-  return <BrowserRouter><RouteEffects /><div className="page-shell" id="page-top"><a className="skip-link" href="#main-content">Skip to content</a><Navbar />
+  return <BrowserRouter basename={import.meta.env.BASE_URL}><RouteEffects /><div className="page-shell" id="page-top"><a className="skip-link" href="#main-content">Skip to content</a><Navbar />
     <main id="main-content"><Routes>
       <Route path="/" element={<><Hero /><Projects /><ExperiencePreview /><ContactPreview /></>} />
       {projects.map((project, index) => <Route key={project.slug} path={`/work/${project.slug}`} element={<ProjectDetailLayout project={project} next={projects[(index + 1) % projects.length]} />} />)}

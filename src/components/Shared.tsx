@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { publicAsset } from '../utils/publicAsset';
 import type { ProjectImage } from '../data/projects';
 
 export function SectionLabel({ children }: { children: ReactNode }) {
@@ -24,7 +25,7 @@ export function CTAButton({ href, children, primary = false, download = false, n
 }
 export function ImageArea({ image, portrait = false, banner = false }: { image: ProjectImage; portrait?: boolean; banner?: boolean }) {
   return <figure className={`image-area${portrait ? ' image-area--portrait' : ''}${banner ? ' image-area--banner' : ''}`}>
-    {image.src ? <img src={image.src} alt={image.alt} loading="lazy" /> :
+    {image.src ? <img src={publicAsset(image.src)} alt={image.alt} loading="lazy" /> :
       <div className="image-placeholder"><span className="mono-label">Image / Placeholder</span><span>{image.caption}</span><span className="image-placeholder__cross" aria-hidden="true">+</span></div>}
     {image.src && <figcaption>{image.caption}</figcaption>}
   </figure>;
