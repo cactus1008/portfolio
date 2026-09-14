@@ -75,6 +75,6 @@ Production hosting must rewrite non-file paths to `index.html` for React Router 
 
 ## GitHub Pages deployment
 
-The site is deployed at `https://cactus1008.github.io/portfolio/`, so `vite.config.ts` uses `base: '/portfolio/'` and `BrowserRouter` uses that same base. Image fields still use `/images/filename.png`; `src/utils/publicAsset.ts` adds the deployment base when rendered. The resume uses the same helper.
+The site uses a custom domain, so `vite.config.ts` uses `base: '/'` and `BrowserRouter` uses that same base. Image fields still use `/images/filename.png`; `src/utils/publicAsset.ts` adds the deployment base when rendered. The resume uses the same helper.
 
-`npm run build` also runs `scripts/build-page-entries.mjs`, creating an `index.html` for each page so direct links and refreshes work on GitHub Pages. Add new routes to that script as well as `src/App.tsx`. Push the changes to `main` to trigger the existing deployment workflow. Preview locally at `/portfolio/`.
+`npm run build` also runs `scripts/build-page-entries.mjs`, creating an `index.html` for each page so direct links and refreshes work on GitHub Pages. Add new routes to that script as well as `src/App.tsx`. Push the changes to `main` to trigger the existing deployment workflow. Preview locally at `/`.
