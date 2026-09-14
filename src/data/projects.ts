@@ -101,11 +101,11 @@ export const projects: Project[] = [
       source: enemyAiExcerpt,
     },
     number: "02",
-    title: "Game Project",
+    title: "Prophecy - Game Dev",
     category: "Game Development / Software Engineering",
 
     // HOMEPAGE CARD
-    description: "[Add a short description of the project and your contribution.]",
+    description: "An original game I'm designing and developing in Godot, combining exploration, storytelling, puzzles, and deck-based combat with an original soundtrack.",
     tags: ["[GDScript]", "[Gameplay Systems]", "[Enemy AI]"],
 
     // PROJECT PAGE: basic details.

@@ -15,13 +15,14 @@ export default function Hero() {
         <div className="hero__wash" />
         <div className="hero__noise" />
 
-        <div className="hero__meta">
-          <span>Development Project Archive</span>
-          <span>Based in Utah</span>
-          <span>Web / Systems / Design</span>
+        <div className="hero__heading">
+          <div className="hero__portfolio-label">Portfolio</div>
+          <div className="hero__meta">
+            <span>Development Project Archive</span>
+            <span>Based in Utah</span>
+            <span>Web / Systems / Design</span>
+          </div>
         </div>
-
-        <div className="hero__portfolio-label">Portfolio</div>
 
         <p className="hero__side-text hero__side-text--left">Personal Projects / Selected Work</p>
         <p className="hero__side-text hero__side-text--right">Utah / Web / Systems / Design</p>

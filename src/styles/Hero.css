@@ -49,6 +49,10 @@
   mix-blend-mode: screen;
 }
 
+.hero__heading {
+  display: contents;
+}
+
 .hero__meta {
   position: absolute;
   z-index: 5;
@@ -118,7 +122,8 @@
   position: relative;
   z-index: 4;
   width: min(100%, 1160px);
-  margin: 0 auto 1.5rem;
+  margin: 0 auto;
+  padding-top: 8rem;
 }
 
 .hero__name {
@@ -268,10 +273,6 @@
     font-size: 0.58rem;
   }
 
-  .hero__overlay {
-    margin-bottom: 1rem;
-  }
-
   .hero__subtype span {
     font-size: 0.55rem;
   }
@@ -282,11 +283,14 @@
 }
 
 .hero__scroll-cue {
-  position: absolute;
+  /* A separate flex row reserves space even when the subtitle wraps. */
+  position: relative;
   z-index: 6;
-  left: 50%;
-  bottom: 1.25rem;
-  transform: translateX(-50%);
+  align-self: center;
+  flex-shrink: 0;
+  margin-top: 1.5rem;
+  min-width: 44px;
+  min-height: 44px;
   display: grid;
   justify-items: center;
   gap: 0.45rem;
@@ -332,4 +336,31 @@
   text-transform: uppercase;
   color: rgba(238, 229, 210, 0.9);
   transform: rotate(-1deg);
+}
+
+/* Stack the top labels only on mobile; preserve desktop placement. */
+@media (max-width: 760px) {
+  .hero__heading {
+    position: relative;
+    z-index: 5;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: auto;
+    flex-shrink: 0;
+  }
+
+  .hero__portfolio-label {
+    position: relative;
+    top: auto;
+    right: auto;
+    padding-top: 1rem;
+    justify-self: end;
+  }
+
+  .hero__meta {
+    position: relative;
+    top: auto;
+    left: auto;
+    justify-self: start;
+  }
 }
