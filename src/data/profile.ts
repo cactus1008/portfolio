@@ -7,7 +7,7 @@ export const profile = {
   phone: '(435) 962-2882',
   phoneHref: 'tel:+14359622882',
   location: 'Utah',
-  resume: publicAsset('/resume.pdf'),
+  resume: publicAsset('/resume.pdf?v=5c77e151'),
   introduction: [
     "I'm Joaquin Elizalde, an Information Systems student at BYU who loves solving problems and building new things. I'm most excited by projects where I can experiment, think creatively, and care about the experience of the person using what I build.",
     "I'm looking for work where I can grow as a developer or designer, building interesting products with people I enjoy being around.",

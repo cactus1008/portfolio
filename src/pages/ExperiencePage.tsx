@@ -7,7 +7,7 @@ export default function ExperiencePage() {
     <div className="section editorial-page">
       <div className="content-width">
         <PageHeader number="02 / Background" title="Experience">
-          <CTAButton href={profile.resume} download="JoaquinElizaldeResume.pdf">Download One-Page Resume</CTAButton>
+          <CTAButton href={profile.resume} download="Joaquin Elizalde Resume.pdf">Download One-Page Resume</CTAButton>
         </PageHeader>
 
         <section aria-label="Experience">
