@@ -31,11 +31,11 @@ export const projects: Project[] = [
 
     // HOMEPAGE CARD
     description: "A website I designed and built for a local therapy practice to help clients learn about their services and get in touch.",
-    tags: ["[HTML / CSS]", "[UI / UX Design]", "[Deployment / SEO]"],
+    tags: ["HTML / CSS", "UI / UX Design", "Deployment / SEO"],
 
     // PROJECT PAGE: basic details.
     role: "Designer & Developer",
-    timeline: "[04-22 - 05-01 / ~21 hours]",
+    timeline: "Apr 22 – May 1 · ~21 hours",
 
     // HOMEPAGE CARD IMAGE: only used in Selected Work.
     hero: {
@@ -106,11 +106,11 @@ export const projects: Project[] = [
 
     // HOMEPAGE CARD
     description: "An original game I'm designing and developing in Godot, combining exploration, storytelling, puzzles, and deck-based combat with an original soundtrack.",
-    tags: ["[GDScript]", "[Gameplay Systems]", "[Enemy AI]"],
+    tags: ["GDScript", "Gameplay Systems", "Enemy AI"],
 
     // PROJECT PAGE: basic details.
     role: "Game Developer & Designer",
-    timeline: "[04-17 - Present]",
+    timeline: "Apr 17 – Present",
 
     // HOMEPAGE CARD IMAGE: only used in Selected Work.
     hero: {
@@ -196,11 +196,11 @@ export const projects: Project[] = [
 
     // HOMEPAGE CARD
     description: "A redesign of Mountain Project focused on making it easier for climbers to find routes, navigate the app, and get the information they need.",
-    tags: ["[Figma]", "[UX research]", "[Prototyping]"],
+    tags: ["Figma", "UX Research", "Prototyping"],
 
     // PROJECT PAGE
     role: "UX Designer & Researcher",
-    timeline: "[09-01 – 09-11 / ~20 Hours]",
+    timeline: "Sep 1–11 · ~20 hours",
 
     // HOMEPAGE CARD IMAGE: only used in Selected Work.
     hero: {
