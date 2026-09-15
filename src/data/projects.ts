@@ -109,14 +109,14 @@ export const projects: Project[] = [
     tags: ["[GDScript]", "[Gameplay Systems]", "[Enemy AI]"],
 
     // PROJECT PAGE: basic details.
-    role: "[Add your role]",
-    timeline: "[Add dates / duration]",
+    role: "Game Developer & Designer",
+    timeline: "[04-17 - Present]",
 
     // HOMEPAGE CARD IMAGE: only used in Selected Work.
     hero: {
       src: "/images/Prophecy.png",
       alt: "Game Project project overview",
-      caption: "[Add project hero screenshot]",
+      caption: "",
     },
 
     // PROJECT PAGE TOP IMAGE: choose a separate, wide image here.
